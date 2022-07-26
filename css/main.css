@@ -270,3 +270,129 @@ body{
   opacity: 0.8; 
    
 }
+
+.for {
+  background-color: #004047;
+  background-image: url("../images/for-before.svg"), url("../images/for-after.svg");
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+  padding-top: 140px;
+  padding-bottom: 151px;
+}
+
+.for__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0;
+  margin-bottom: 92px;
+}
+
+.for__span {
+  color: #79C8C7;
+}
+
+.for__list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.for__item {
+  background-image: url("../images/Ã¢â‚¬Å“.svg");
+  background-position: top 5px center;
+  background-size: 67px 56px;
+  background-repeat: no-repeat;
+  width: 350px;
+  text-align: center;
+  padding-top: 36px;
+}
+
+
+.for__item:nth-child(2) {
+  margin: 0 30px;
+}
+
+.for__text {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.for_str {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #79C8C7;
+  margin: 0;
+  margin-bottom: 2px;
+}
+
+.for__text2 {
+  display: block;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.for__text3 {
+  display: block;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.for__text4 {
+  display: block;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.for__text2::after {
+  display: block;
+  content: "";
+  width: 62px;
+  height: 62px;
+  margin: 0 auto;
+  margin-top: 32px;
+  border-radius: 50%;
+  background-image: url("../images/kady.svg");
+  background-repeat: no-repeat;
+}
+
+.for__text3::after {
+  display: block;
+  content: "";
+  width: 62px;
+  height: 62px;
+  margin: 0 auto;
+  margin-top: 32px;
+  border-radius: 50%;
+  background-image: url("../images/aiysha.svg");
+  background-repeat: no-repeat;
+}
+
+.for__text4::after {
+  display: block;
+  content: "";
+  width: 62px;
+  height: 62px;
+  margin: 0 auto;
+  margin-top: 32px;
+  border-radius: 50%;
+  background-image: url("../images/arthur.svg");
+  background-repeat: no-repeat;
+}
