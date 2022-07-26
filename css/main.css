@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "Livvic";
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/livvic-v13-latin-600.woff2") format("woff2"), 
+  url("../fonts/livvic-v13-latin-600.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Livvic";
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/livvic-v13-latin-700.woff2") format("woff2"), 
+  url("../fonts/livvic-v13-latin-700.woff") format("woff"); 
+}
+
+
+/* GENERAL */
+
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
+
+html{
+  height: 100%;
+  box-sizing: border-box;
+}
+
+img{
+  display: block;
+  height: auto;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Livvic", "Arial", sans-serif;
+
+}
+
+/* VISUALLY-HIDDEN */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* CONTAINER */
+
+.container{
+  width: 1150px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+/* STICKY-FOOTER */
+
+.site-main{
+  flex-grow: 1;
+}
