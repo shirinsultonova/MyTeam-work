@@ -193,3 +193,80 @@ body{
  
  
 
+ 
+.build{ 
+  padding-top: 140px; 
+  padding-bottom: 140px; 
+  background-color: #012f34; 
+  background-image: url(../images/section-after\ \(1\).svg); 
+  background-position: calc(50% + 690px) calc(50% + 190px); 
+  background-repeat: no-repeat; 
+   
+} 
+.build__box{ 
+  display: flex; 
+  justify-content: space-between; 
+} 
+.build__themebox{ 
+  position: relative; 
+  width: 445px; 
+} 
+.build__themebox::before{ 
+  position: absolute; 
+  top: -54px; 
+  content: ""; 
+  display: block; 
+  width: 50px; 
+  height: 4px; 
+  background-color: #F67E7E; 
+} 
+.build__theme{ 
+  margin: 0; 
+  font-weight: 700; 
+  font-size: 48px; 
+  line-height: 48px; 
+  color: #fff; 
+} 
+.build__item{ 
+  display: flex; 
+  margin-bottom: 32px; 
+} 
+.build__item:last-child{ 
+  margin-bottom: 0; 
+} 
+.build__itembox{ 
+  width: 445px; 
+} 
+.build__item::before{ 
+  content: ""; 
+  display: block; 
+  margin-right: 23px; 
+  background-image: url("../images/Experienced.svg"); 
+  background-repeat: no-repeat; 
+  width: 72px; 
+  height: 72px; 
+}
+
+.build__item:nth-child(2)::before{ 
+  background-image: url("../images/easy.svg"); 
+} 
+.build__item:nth-child(3)::before{ 
+  background-image: url("../images/enhansed.svg"); 
+} 
+.build__minitheme{ 
+  margin: 0; 
+  margin-bottom: 16px; 
+  font-weight: 700; 
+  font-size: 18px; 
+  line-height: 28px; 
+  color: #F67E7E; 
+} 
+.build__minitext{ 
+  margin: 0; 
+  font-weight: 600; 
+  font-size: 15px; 
+  line-height: 25px; 
+  color: #fff; 
+  opacity: 0.8; 
+   
+}
