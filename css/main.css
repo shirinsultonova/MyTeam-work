@@ -396,3 +396,43 @@ body{
   background-image: url("../images/arthur.svg");
   background-repeat: no-repeat;
 }
+
+.site-article{
+  padding: 76px 0px;
+  background-color: #F67E7E;
+  background-image: url("../images/ready-to-started-bg\ \(1\).svg");
+  background-repeat: no-repeat;
+  background-position: calc(50% - 620px) calc(50% + 80px);
+}
+.site-article__box{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.site-article__theme{
+  margin: 0;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  color: #012f34;
+}
+.site-article__link{
+  text-decoration: none;
+  padding: 10px 32px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #012f34;
+  border: 2px solid #012F34;
+  border-radius: 24px;
+}
+.site-article__link:hover{
+  border: 2px solid transparent;
+  color: #fff;
+  background-color: #012f34;
+}
+.site-article__link:active{
+  opacity: 0.5;
+  background-color: transparent;
+  border: 2px solid #012F34;
+}
