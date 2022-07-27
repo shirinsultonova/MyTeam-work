@@ -821,3 +821,27 @@ body{
   background-color: #79C8C7;
   transform: rotate(45deg);
 }
+
+.our-clients{
+  padding: 140px 0px;
+  background-color: #012F34;
+  background-image: url("../images/clients-bg.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50% - 620px) calc(50% - 120px);
+}
+.our-clients__theme{
+  margin: 0;
+  margin-bottom: 64px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: #fff;
+}
+
+.our-clients__list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
