@@ -12,6 +12,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @font-face {
   font-family: "Livvic";
   font-weight: 600;
@@ -633,10 +640,17 @@ body{
 }
 
 .meet__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
@@ -647,11 +661,14 @@ body{
   text-align: center;
   margin-bottom: 76px;
   cursor: pointer;
-  transform-origin: center;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
 }
 
 .span-plus:hover ~ .meet__box2{
-  transform: rotateY(360deg);
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
   z-index: 50;
 }
 
@@ -680,15 +697,23 @@ body{
 
 .meet__box2 {
   position: absolute;
-  flex-direction: row-reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   top: 0;
   left: 0;
   width: 350px;
   padding-top: 40px;
   padding-bottom: 63px;
   background: #002529;
+  -webkit-transition: -webkit-transform .7s ease;
+  transition: -webkit-transform .7s ease;
+  -o-transition: transform .7s ease;
   transition: transform .7s ease;
-  perspective: 2000px;
+  transition: transform .7s ease, -webkit-transform .7s ease;
+  -webkit-perspective: 2000px;
+          perspective: 2000px;
 }
 
 .meet__text {
@@ -706,9 +731,15 @@ body{
 }
 
 .meet__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .meet__likn {
@@ -809,17 +840,27 @@ body{
   z-index: 80;
   width: 56px;
   height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 50%;
   background-color: #F67E7E;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
   transition: .4s;
 }
 
 .span-plus:hover {
   background-color: #79C8C7;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .our-clients{
@@ -840,8 +881,13 @@ body{
 }
 
 .our-clients__list{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-
