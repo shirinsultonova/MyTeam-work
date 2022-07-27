@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @font-face {
   font-family: "Livvic";
   font-weight: 600;
@@ -354,7 +361,7 @@ body{
 }
 
 .for__item {
-  background-image: url("../images/Ã¢â‚¬Å“.svg");
+  background-image: url("../images/“.svg");
   background-position: top 5px center;
   background-size: 67px 56px;
   background-repeat: no-repeat;
