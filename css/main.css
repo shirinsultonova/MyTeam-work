@@ -859,7 +859,6 @@ body{
 
 .span-plus:hover {
   background-color: #79C8C7;
-<<<<<<< HEAD
   transform: rotate(45deg);
 }
 
@@ -1071,11 +1070,6 @@ body{
   cursor: pointer;
   margin-top: 24px;
 }
-=======
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
 
 .our-clients{
   padding: 140px 0px;
@@ -1105,4 +1099,3 @@ body{
       -ms-flex-align: center;
           align-items: center;
 }
->>>>>>> 42f57bf70be963a2b88d07a6cd1e92bc1585fb00
