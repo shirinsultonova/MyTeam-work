@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
-    <link rel="stylesheet" href="./css/main.min.css">
-    <!-- <link rel="stylesheet" href="./css/main.css"> -->
+    <!-- <link rel="stylesheet" href="./css/main.min.css"> -->
+    <link rel="stylesheet" href="./css/main.css">
     <title>Document</title>
 </head>
 <body>
-    <header class="site-header">
+    <header class="site-header site-header--pading">
         <div class="container">
             <div class="site-header__box"> 
                 <a class="logo" href="./index.html"><img class="logo__img" src="./images/myteam.svg" alt="Site logo"></a> 
@@ -26,5 +26,51 @@
               </div>
         </div>
     </header>
+    <main class="site-main">
+        <section class="contact">
+            <div class="container">
+                <div class="contact__box">
+                    <div class="contact__start">
+                        <h2 class="contact__title">Contact</h2>
+                        <p class="contact__text">Ask us about</p>
+                        <ul class="contact__list">
+                            <li class="contact__item">
+                                <p class="contact__item-text">The quality of our talent network</p>
+                            </li>
+                            <li class="contact__item">
+                                <p class="contact__item-text">Usage & implementation of our software</p>
+                            </li>
+                            <li class="contact__item">
+                                <p class="contact__item-text">How we help drive innovation</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <form class="contact__form site-form" action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
+                        <label class="site-form__label">
+                            <input class="site-form__inp" type="text" name="user_name" aria-label="Enter ypur name"  placeholder="Name" minlength="2" required>
+                            <span class="site-form__spn">This field is required</span>
+                        </label>
+                        <label class="site-form__label">
+                            <input class="site-form__inp" type="email" name="user_email" aria-label="Enter your email"  placeholder="Email Address" required>
+                            <span class="site-form__spn">This field is required</span>
+                        </label>
+                        <label class="site-form__label">
+                            <input class="site-form__inp" type="text" name="company_name" aria-label="Enter your Company Name"  placeholder="Company Name" minlength="2" required>
+                            <span class="site-form__spn">This field is required</span>
+                        </label>
+                        <label class="site-form__label">
+                            <input class="site-form__inp" type="text" name="user_title" aria-label="Enter your title"  placeholder="Title" minlength="2" required>
+                            <span class="site-form__spn">This field is required</span>
+                        </label>
+                        <label class="site-form__label">
+                            <textarea class="site-form__textare" name="user_text" aria-label="Enter your feedback" placeholder="Message" minlength="2" cols="5" rows="5"></textarea>
+                            <span class="site-form__spn">This field is required</span>
+                        </label>
+                        <button class="btn-submit" type="submit">submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
