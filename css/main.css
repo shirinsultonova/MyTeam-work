@@ -19,6 +19,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @font-face {
   font-family: "Livvic";
   font-weight: 600;
@@ -859,7 +866,9 @@ body{
 
 .span-plus:hover {
   background-color: #79C8C7;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .site-header--pading {
@@ -896,9 +905,15 @@ body{
 }
 
 .contact__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contact__start {
@@ -931,9 +946,16 @@ body{
 }
 
 .contact__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
   padding-left: 80px;
 }
@@ -989,6 +1011,42 @@ body{
   border: 1px solid #fafafa;
 }
 
+.site-form__inp::-webkit-input-placeholder {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: -0.115385px;
+  color: #FFFFFF;
+  opacity: 0.4;
+}
+
+.site-form__inp::-moz-placeholder {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: -0.115385px;
+  color: #FFFFFF;
+  opacity: 0.4;
+}
+
+.site-form__inp:-ms-input-placeholder {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: -0.115385px;
+  color: #FFFFFF;
+  opacity: 0.4;
+}
+
+.site-form__inp::-ms-input-placeholder {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: -0.115385px;
+  color: #FFFFFF;
+  opacity: 0.4;
+}
+
 .site-form__inp::placeholder {
   font-weight: 600;
   font-size: 15px;
@@ -998,13 +1056,39 @@ body{
   opacity: 0.4;
 }
 
+.site-form__inp:not(:-moz-placeholder-shown):not(:focus):invalid  {
+  border-bottom-color: #F67E7E;
+  color: #F67E7E;
+}
+
+.site-form__inp:not(:-ms-input-placeholder):not(:focus):invalid  {
+  border-bottom-color: #F67E7E;
+  color: #F67E7E;
+}
+
 .site-form__inp:not(:placeholder-shown):not(:focus):invalid  {
   border-bottom-color: #F67E7E;
   color: #F67E7E;
 }
 
+.site-form__inp:not(:-moz-placeholder-shown):not(:focus):valid  {
+  border-bottom: 1px solid #79C8C7;
+}
+
+.site-form__inp:not(:-ms-input-placeholder):not(:focus):valid  {
+  border-bottom: 1px solid #79C8C7;
+}
+
 .site-form__inp:not(:placeholder-shown):not(:focus):valid  {
   border-bottom: 1px solid #79C8C7;
+}
+
+.site-form__inp:not(:-moz-placeholder-shown):not(:focus):invalid ~ .site-form__spn {
+  opacity: 1;
+}
+
+.site-form__inp:not(:-ms-input-placeholder):not(:focus):invalid ~ .site-form__spn {
+  opacity: 1;
 }
 
 .site-form__inp:not(:placeholder-shown):not(:focus):invalid ~ .site-form__spn {
@@ -1039,9 +1123,31 @@ body{
 }
 
 
+.site-form__textare:not(:-moz-placeholder-shown):not(:focus):valid  {
+  border-bottom: 1px solid #79C8C7;
+
+}
+
+
+.site-form__textare:not(:-ms-input-placeholder):not(:focus):valid  {
+  border-bottom: 1px solid #79C8C7;
+
+}
+
+
 .site-form__textare:not(:placeholder-shown):not(:focus):valid  {
   border-bottom: 1px solid #79C8C7;
 
+}
+
+.site-form__textare:not(:-moz-placeholder-shown):not(:focus):invalid  {
+  border-bottom-color: #F67E7E;
+  color: #F67E7E;
+}
+
+.site-form__textare:not(:-ms-input-placeholder):not(:focus):invalid  {
+  border-bottom-color: #F67E7E;
+  color: #F67E7E;
 }
 
 .site-form__textare:not(:placeholder-shown):not(:focus):invalid  {
@@ -1049,8 +1155,52 @@ body{
   color: #F67E7E;
 }
 
+.site-form__textare:not(:-moz-placeholder-shown):not(:focus):invalid ~ .site-form__spn {
+  opacity: 1;
+}
+
+.site-form__textare:not(:-ms-input-placeholder):not(:focus):invalid ~ .site-form__spn {
+  opacity: 1;
+}
+
 .site-form__textare:not(:placeholder-shown):not(:focus):invalid ~ .site-form__spn {
   opacity: 1;
+}
+
+.site-form__textare::-webkit-input-placeholder {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: -0.115385px;
+  color: #FFFFFF;
+  opacity: 0.4;
+}
+
+.site-form__textare::-moz-placeholder {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: -0.115385px;
+  color: #FFFFFF;
+  opacity: 0.4;
+}
+
+.site-form__textare:-ms-input-placeholder {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: -0.115385px;
+  color: #FFFFFF;
+  opacity: 0.4;
+}
+
+.site-form__textare::-ms-input-placeholder {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: -0.115385px;
+  color: #FFFFFF;
+  opacity: 0.4;
 }
 
 .site-form__textare::placeholder {
